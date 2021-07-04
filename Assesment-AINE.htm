@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+<script src="https://kit.fontawesome.com/db55dd1c58.js" crossorigin="anonymous"></script>
+<title>Html layout page</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif
+    }
+    header {
+            background-color: #FFFDFD;
+            font-size: 30px;
+            height: 73px;          
+    }
+    header i {
+        border: 1px solid whitesmoke;
+        padding:20px 40px;
+        box-shadow: 10px 0px 35px lightgray;
+    }
+    nav {
+        float: left;
+        width: 10%;
+        height: 800px;
+        background-coloR:#FFFDFD;
+        /* padding: 20px; */
+        font-size: 30px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding:0px; 
+    }
+    nav ul li {
+        padding:10px;
+        text-align: center;     
+    }
+  
+   #active {
+        background-color: #D2E9F9;
+        border-left: 3.5px solid #0F83D1;     
+    }
+    article {
+        float: left;
+        width: 90%;
+        padding: 10px;
+        background-color:whitesmoke;
+        height: 800px;
+
+    }
+    article h6 {
+        width: 220px;
+        height: 220px;
+        background-color: white;
+        margin-left:195px;
+        border-radius: 6px;
+    }
+
+    /* Clearing the floats after the column */
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    div p {
+        padding : 10px;
+        color: #7D85AE;
+        font-weight: bold;
+    }
+    div input {
+        border: 1px solid white;
+        border-radius:10px;
+        padding:12px;
+        width: 625px;
+        border: 600px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    
+    /* Making responsive page
+    @media (max-width: 600px){
+      header,  nav, article {
+            width: 100%;
+            height: auto;
+        }
+    } */
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header><i class="fas fa-chart-pie"></i></header>
+   <section>
+       <nav>
+           <ul>
+               <li>	<i class="far fa-user"></i>
+                    <p style="font-size: 12px;line-height: 0px;"><b>Students</b></p></li>
+            
+               <li id="active"><i class="fas fa-book"></i>
+                     <p style="font-size: 11.9px;line-height: 0px;"><b>Lesson Plan</b></p></li>
+               <li><i class="fas fa-cog"></i>
+                    <p style="font-size: 12px;line-height: 0px;"><b>Settings</b></p></li>      
+           </ul>
+       </nav>
+       <article>
+        <div>
+           <p><i class="glyphicon glyphicon-triangle-left"></i> Videos</p> 
+                <center>
+                    <input type="text" value="Insert URL here"><br>
+                        <strong>or</strong>
+                 </center>  
+        
+        </div>
+            <h6>
+                <center style="font-size: medium;text-align: center;padding-top: 100px;">
+                    <strong>upload</strong>
+                </center> 
+            </h6>
+       </article>
+   </section>
+</div>
+ 
+</body>
+</html>
